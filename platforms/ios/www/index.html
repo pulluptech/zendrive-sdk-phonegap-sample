@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <title>Hello World</title>
+        
+        
+        <script>
+            
+            window.zendriveSetup = function(applicationKey, driverId, callback){
+                cordova.exec(callback, function(err){alert(err)},"Zendrive","setup", [applicationKey, driverId]);
+            }
+            
+            window.zendriveTeardown = function(callback){
+                cordova.exec(callback, function(err){alert(err)},"Zendrive","teardown", []);
+            }
+
+            window.zendriveStartDrive = function(driveTrackingId, callback){
+                cordova.exec(callback, function(err){alert(err)},"Zendrive","startDrive", [driveTrackingId]);
+            }
+
+            window.zendriveStopDrive = function(callback){
+                cordova.exec(callback, function(err){alert(err)},"Zendrive","stopDrive", []);
+            }
+
+            window.zendriveStartSession = function(sessionId, callback){
+                cordova.exec(callback, function(err){alert(err)},"Zendrive","startSession", [sessionId]);
+            }
+
+            window.zendriveStopSession = function(callback){
+                cordova.exec(callback, function(err){alert(err)},"Zendrive","stopSession", []);
+            }
+            
+            function callSetup(){     
+                var applicationKey = "your_application_key";
+                var driverId = "driver_id";
+                window.zendriveSetup(applicationKey, driverId, function(){
+                    alert("Setup Done!");
+                });
+            }
+            
+            function callTeardown(){
+                window.zendriveTeardown(function(){
+                    alert("Teardown Done!");
+                });
+            }
+
+            function generateDriveTrackingId(){
+                var d = new Date();
+                var n = d.getTime();
+
+                return n.toString();
+            }
+
+            function callStartDrive(){
+                var trackingId = generateDriveTrackingId();
+                window.zendriveStartDrive(trackingId,function(){
+                    alert("Start drive done!");
+                });
+            }
+
+            function callStopDrive(){
+                window.zendriveStopDrive(function(){
+                    alert("Stop drive done!");
+                });
+            }
+
+            function callStartSession(){
+                var sessionId = "Session1";
+                window.zendriveStartSession(sessionId,function(){
+                    alert("Start session done!");
+                });
+            }
+
+            function callStopSession(){
+                window.zendriveStopSession(function(){
+                    alert("Stop session done!");
+                });
+            }
+
+        </script>
+        
+    </head>
+    <body>
+        <div style="margin-top:40%;">
+            <h1><a onclick="callSetup()">ZENDRIVE SETUP</a></h1>
+            <br/>
+            <br/>
+            <h1><a onclick="callTeardown()">ZENDRIVE TEARDOWN</a></h1>
+            <br/>
+            <br/>
+            <h1><a onclick="callStartDrive()">ZENDRIVE START DRIVE</a></h1>
+            <br/>
+            <br/>
+            <h1><a onclick="callStopDrive()">ZENDRIVE STOP DRIVE</a></h1>
+            <br/>
+            <br/>
+            <h1><a onclick="callStartSession()">ZENDRIVE START SESSION</a></h1>
+            <br/>
+            <br/>
+            <h1><a onclick="callStopSession()">ZENDRIVE STOP SESSION</a></h1>
+        </div>
+         
+        
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>

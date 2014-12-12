@@ -1,0 +1,9 @@
+# view AndroidManifest.xml #generated:5
+-keep class com.zendrive.phonegap.demo.CordovaApp { <init>(...); }
+
+# view AndroidManifest.xml #generated:12
+-keep class com.zendrive.sdk.services.UserActivityService { <init>(...); }
+
+# view AndroidManifest.xml #generated:13
+-keep class com.zendrive.sdk.services.ZendriveService { <init>(...); }
+
