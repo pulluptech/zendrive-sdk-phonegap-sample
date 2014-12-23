@@ -37,7 +37,8 @@
                 cordova.exec(callback, function(err){alert(err)},"Zendrive","stopSession", []);
             }
             
-            function callSetup(){     
+            function callSetup(){
+                // Please get a key from http://developers.zendrive.com if you don't have one
                 var applicationKey = "your_application_key";
                 var driverId = "driver_id";
                 window.zendriveSetup(applicationKey, driverId, function(){
