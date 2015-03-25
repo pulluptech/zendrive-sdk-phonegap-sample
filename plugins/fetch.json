@@ -1,0 +1,9 @@
+{
+    "com.zendrive.phonegap.sdk": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/zendrive/zendrive-sdk-phonegap-plugin",
+            "subdir": "."
+        }
+    }
+}

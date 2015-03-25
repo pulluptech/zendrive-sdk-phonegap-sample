@@ -3,7 +3,9 @@ module.exports = [];
 module.exports.metadata = 
 // TOP OF METADATA
 {
-    "com.zendrive.phonegap.sdk": "1.2.4"
+    "android.support.v4": "21.0.1",
+    "com.google.playservices": "21.0.0",
+    "com.zendrive.phonegap.sdk": "1.3.0"
 }
 // BOTTOM OF METADATA
 });

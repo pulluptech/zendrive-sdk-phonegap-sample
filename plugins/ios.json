@@ -9,31 +9,31 @@
                 "parents": {
                     "CoreLocation.framework": [
                         {
-                            "xml": "false",
+                            "xml": false,
                             "count": 1
                         }
                     ],
                     "CoreMotion.framework": [
                         {
-                            "xml": "false",
+                            "xml": false,
                             "count": 1
                         }
                     ],
                     "SystemConfiguration.framework": [
                         {
-                            "xml": "false",
+                            "xml": false,
                             "count": 1
                         }
                     ],
                     "libsqlite3.0.dylib": [
                         {
-                            "xml": "false",
+                            "xml": false,
                             "count": 1
                         }
                     ],
                     "libz.1.1.3.dylib": [
                         {
-                            "xml": "false",
+                            "xml": false,
                             "count": 1
                         }
                     ]
@@ -68,6 +68,12 @@
         }
     },
     "installed_plugins": {
+        "android.support.v4": {
+            "PACKAGE_NAME": "com.zendrive.phonegap.demo"
+        },
+        "com.google.playservices": {
+            "PACKAGE_NAME": "com.zendrive.phonegap.demo"
+        },
         "com.zendrive.phonegap.sdk": {
             "PACKAGE_NAME": "com.zendrive.phonegap.demo"
         }
