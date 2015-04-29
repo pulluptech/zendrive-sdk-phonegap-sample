@@ -5,5 +5,44 @@
             "url": "https://github.com/zendrive/zendrive-sdk-phonegap-plugin",
             "subdir": "."
         }
+    },
+    "com.google.playservices": {
+        "source": {
+            "type": "registry",
+            "id": "com.google.playservices"
+        }
+    },
+    "android.support.v4": {
+        "source": {
+            "type": "registry",
+            "id": "android.support.v4"
+        }
+    },
+    "com.cordova.plugins.sms": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/cordova-sms/cordova-sms-plugin.git",
+            "subdir": "."
+        }
+    },
+    "cordova-plugin-console": {
+        "source": {
+            "type": "git",
+            "url": "https://git-wip-us.apache.org/repos/asf/cordova-plugin-console.git",
+            "subdir": "."
+        }
+    },
+    "org.apache.cordova.console": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.console"
+        }
+    },
+    "org.apache.cordova.plugin.ActivityIndicator": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Initsogar/cordova-activityindicator.git",
+            "subdir": "."
+        }
     }
 }

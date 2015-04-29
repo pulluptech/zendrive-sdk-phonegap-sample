@@ -5,6 +5,20 @@
     },
     "config_munge": {
         "files": {
+            "res/xml/config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"ActivityIndicator\"><param name=\"android-package\" value=\"org.apache.cordova.plugin.ActivityIndicator\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Zendrive\"><param name=\"android-package\" value=\"com.zendrive.phonegap.ZendriveCordovaPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
             "AndroidManifest.xml": {
                 "parents": {
                     "/manifest/application": [
@@ -48,20 +62,13 @@
                         }
                     ]
                 }
-            },
-            "res/xml/config.xml": {
-                "parents": {
-                    "/*": [
-                        {
-                            "xml": "<feature name=\"Zendrive\"><param name=\"android-package\" value=\"com.zendrive.phonegap.ZendriveCordovaPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
-                            "count": 1
-                        }
-                    ]
-                }
             }
         }
     },
     "installed_plugins": {
+        "org.apache.cordova.plugin.ActivityIndicator": {
+            "PACKAGE_NAME": "com.zendrive.phonegap.demo"
+        },
         "com.zendrive.phonegap.sdk": {
             "PACKAGE_NAME": "com.zendrive.phonegap.demo"
         }

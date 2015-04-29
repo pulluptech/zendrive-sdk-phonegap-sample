@@ -7,8 +7,6 @@ local.properties
 # Ant builds
 ant-build
 ant-gen
-CordovaLib/ant-build
-CordovaLib/ant-gen
 # Eclipse builds
 gen
 out

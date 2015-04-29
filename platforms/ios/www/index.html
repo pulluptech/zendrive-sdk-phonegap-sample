@@ -10,132 +10,97 @@
         <meta name="msapplication-tap-highlight" content="no" />
         <title>Hello World</title>
 
-
         <script>
+            // Please get a key from http://developers.Zendrive.com if you don't have one
+            var applicationKey = "your-application-key";
+            // Unique id of the driver using the app.
+            var driverId = "driver-id";
 
-            var trackingId;
+            function processStartOfDrive(zendriveDriveStartInfo) {
+                alert("processStartOfDrive: " + JSON.stringify(zendriveDriveStartInfo));
+            }
 
-        window.zendriveSetup = function(applicationKey, driverId, callback){
-            cordova.exec(callback, function(err){alert(err)},"Zendrive","setup", [applicationKey, driverId]);
-        }
+            function processEndOfDrive(zendriveDriveInfo) {
+                alert("processEndOfDrive: " + JSON.stringify(zendriveDriveInfo));
+            }
 
-        window.zendriveSetupWithDriveDetectionMode = function(applicationKey, driverId, driveDetectionMode, callback){
-            cordova.exec(callback, function(err){alert(err)},"Zendrive","setup", [applicationKey, driverId, driveDetectionMode]);
-        }
+            function processLocationDenied() {
+                alert("Location denied, please enable location services to keep Zendrive working");
+            }
 
-        window.zendriveTeardown = function(callback){
-            cordova.exec(callback, function(err){alert(err)},"Zendrive","teardown", []);
-        }
+            function callSetup() {
+                ActivityIndicator.show(null);
+                var config = new Zendrive.ZendriveConfiguration(applicationKey, driverId);
+                var driverAttributes = new Zendrive.ZendriveDriverAttributes();
+                driverAttributes.firstName = "first_name";
+                driverAttributes.lastName = "last_name";
+                driverAttributes.email = "e@mail.com";
+                driverAttributes.group = "group1";
+                driverAttributes.phoneNumber = "11234567890"
+                driverAttributes.driverStartDate = 1428953991;
+                driverAttributes.setCustomAttribute("custom_key", "custom_value");
+                config.driverAttributes = driverAttributes;
+                config.driveDetectionMode = Zendrive.ZendriveDriveDetectionMode.ZendriveDriveDetectionModeAutoON;
 
-        window.zendriveStartDrive = function(driveTrackingId, callback){
-            cordova.exec(callback, function(err){alert(err)},"Zendrive","startDrive", [driveTrackingId]);
-        }
+                Zendrive.setup(config, new Zendrive.ZendriveCallback(processStartOfDrive,
+                    processEndOfDrive, processLocationDenied), function() {
+                    ActivityIndicator.hide();
+                    alert("Setup done!");
+                },
+                function (error) {
+                    ActivityIndicator.hide();
+                    alert("Setup failed: " + error);
+                });
+            }
 
-        window.zendriveStopDrive = function(driveTrackingId, callback){
-            cordova.exec(callback, function(err){alert(err)},"Zendrive","stopDrive", [driveTrackingId]);
-        }
-
-        window.zendriveStartSession = function(sessionId, callback){
-            cordova.exec(callback, function(err){alert(err)},"Zendrive","startSession", [sessionId]);
-        }
-
-        window.zendriveStopSession = function(callback){
-            cordova.exec(callback, function(err){alert(err)},"Zendrive","stopSession", []);
-        }
-
-        window.zendriveSetDriveDetectionMode = function(mode, callback){
-            cordova.exec(callback, function(err){alert(err)},"Zendrive",
-                "setDriveDetectionMode", [mode]);
-        }
-
-        // Please get a key from http://developers.zendrive.com if you don't have one
-        var applicationKey = "your_application_key";
-        // Unique id of the driver using the app.
-        var driverId = "driver_id";
-        var autoModeOff = "AUTO_OFF";
-        var autoModeOn = "AUTO_ON";
-
-        function callSetup(){
-            window.zendriveSetup(applicationKey, driverId, function(){
-                alert("Setup Done!");
-            });
-        }
-
-        function callSetupWithDriveDetectionModeOn(){
-            window.zendriveSetupWithDriveDetectionMode(
-                applicationKey, driverId, autoModeOn, function(){
-                alert("Setup Done!");
-            });
-        }
-
-        function callSetupWithDriveDetectionModeOff(){
-            window.zendriveSetupWithDriveDetectionMode(
-                applicationKey, driverId, autoModeOff, function(){
-                alert("Setup Done!");
-            });
-        }
-
-        function callTeardown(){
-            window.zendriveTeardown(function(){
+            function callTeardown(){
+                Zendrive.teardown();
                 alert("Teardown Done!");
-            });
-        }
+            }
 
-        function generateDriveTrackingId(){
-            var d = new Date();
-            var n = d.getTime();
+            function generateDriveTrackingId(){
+                var d = new Date();
+                var n = d.getTime();
 
-            return n.toString();
-        }
+                return n.toString();
+            }
 
-        function callStartDrive(){
-            trackingId = generateDriveTrackingId();
-            window.zendriveStartDrive(trackingId, function(){
-                alert("Start drive done!");
-            });
-        }
+            function callStartDrive(){
+                trackingId = generateDriveTrackingId();
+                Zendrive.startDrive(trackingId);
+            }
 
-        function callStopDrive(){
-            window.zendriveStopDrive(trackingId, function(){
+            function callStopDrive(){
+                Zendrive.stopDrive(trackingId);
                 trackingId = null;
-                alert("Stop drive done!");
-            });
-        }
+            }
 
-        function callStartSession(){
-            var sessionId = "Session1";
-            window.zendriveStartSession(sessionId,function(){
-                alert("Start session done!");
-            });
-        }
+            function callStartSession(){
+                var sessionId = "Session1";
+                Zendrive.startSession(sessionId);
+                alert("Session started");
+            }
 
-        function callStopSession(){
-            window.zendriveStopSession(function(){
-                alert("Stop session done!");
-            });
-        }
+            function callStopSession(){
+                Zendrive.stopSession();
+                alert("Session stopped");
+            }
 
-        function setDriveDetectionOn() {
-            window.zendriveSetDriveDetectionMode(autoModeOn,
-                function(){alert(autoModeOn);});
-        }
+            function setDriveDetectionOn() {
+                Zendrive.setDriveDetectionMode(Zendrive.ZendriveDriveDetectionMode.ZendriveDriveDetectionModeAutoON);
+                alert("Drive detection mode ON");
+            }
 
-        function setDriveDetectionOff() {
-            window.zendriveSetDriveDetectionMode(autoModeOff,
-                function(){alert(autoModeOff);});
-        }
-
+            function setDriveDetectionOff() {
+                Zendrive.setDriveDetectionMode(Zendrive.ZendriveDriveDetectionMode.ZendriveDriveDetectionModeAutoOFF);
+                alert("Drive detection mode OFF");
+            }
         </script>
 
     </head>
     <body>
-        <div style="margin-top:40%;">
-            <br/>
-            <br/>
-            <h1><a onclick="callSetupWithDriveDetectionModeOn()">ZENDRIVE SETUP AUTO_ON</a></h1>
-            <br/>
-            <br/>
-            <h1><a onclick="callSetupWithDriveDetectionModeOff()">ZENDRIVE SETUP AUTO_OFF</a></h1>
+        <div style="margin-top:10%;">
+            <h1><a onclick="callSetup()">ZENDRIVE SETUP</a></h1>
             <br/>
             <br/>
             <h1><a onclick="callTeardown()">ZENDRIVE TEARDOWN</a></h1>
@@ -158,7 +123,6 @@
             <br/>
             <h1><a onclick="setDriveDetectionOff()">ZENDRIVE AUTO OFF</a></h1>
         </div>
-
 
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
