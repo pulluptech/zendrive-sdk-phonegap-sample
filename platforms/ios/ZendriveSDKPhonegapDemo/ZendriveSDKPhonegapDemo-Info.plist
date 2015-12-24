@@ -185,5 +185,10 @@
     </array>
     <key>NSLocationAlwaysUsageDescription</key>
     <string>This app requires background location tracking</string>
+    <key>NSAppTransportSecurity</key>
+    <dict>
+      <key>NSAllowsArbitraryLoads</key>
+      <true/>
+    </dict>
   </dict>
 </plist>

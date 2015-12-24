@@ -19,7 +19,7 @@ module.exports.metadata =
 // TOP OF METADATA
 {
     "org.apache.cordova.plugin.ActivityIndicator": "1.0.0",
-    "com.zendrive.phonegap.sdk": "2.0.0"
+    "com.zendrive.phonegap.sdk": "2.0.2"
 }
 // BOTTOM OF METADATA
 });

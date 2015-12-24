@@ -66,6 +66,12 @@
                             "xml": "<string>This app requires background location tracking</string>",
                             "count": 1
                         }
+                    ],
+                    "NSAppTransportSecurity": [
+                        {
+                            "xml": "<dict><key>NSAllowsArbitraryLoads</key><true /></dict>",
+                            "count": 1
+                        }
                     ]
                 }
             }
