@@ -73,12 +73,5 @@
             "PACKAGE_NAME": "com.zendrive.phonegap.demo"
         }
     },
-    "dependent_plugins": {
-        "com.google.playservices": {
-            "PACKAGE_NAME": "com.zendrive.phonegap.demo"
-        },
-        "android.support.v4": {
-            "PACKAGE_NAME": "com.zendrive.phonegap.demo"
-        }
-    }
+    "dependent_plugins": {}
 }

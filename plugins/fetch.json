@@ -1,11 +1,4 @@
 {
-    "com.zendrive.phonegap.sdk": {
-        "source": {
-            "type": "git",
-            "url": "https://github.com/zendrive/zendrive-sdk-phonegap-plugin",
-            "subdir": "."
-        }
-    },
     "com.google.playservices": {
         "source": {
             "type": "registry",
@@ -44,5 +37,14 @@
             "url": "https://github.com/Initsogar/cordova-activityindicator.git",
             "subdir": "."
         }
+    },
+    "com.zendrive.phonegap.sdk": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/zendrive/zendrive-sdk-phonegap-plugin",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
     }
 }
