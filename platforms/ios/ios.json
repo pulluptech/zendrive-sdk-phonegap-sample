@@ -23,7 +23,7 @@
                 "parents": {
                     "UIBackgroundModes": [
                         {
-                            "xml": "<array><string>fetch</string><string>location</string></array>",
+                            "xml": "<array><string>location</string></array>",
                             "count": 1
                         }
                     ],
@@ -49,6 +49,9 @@
         },
         "com.zendrive.phonegap.sdk": {
             "PACKAGE_NAME": "com.zendrive.phonegap.demo"
+        },
+        "cordova-plugin-multidex": {
+            "PACKAGE_NAME": "com.zendrive.phonegap.demo"
         }
     },
     "dependent_plugins": {},
@@ -72,6 +75,7 @@
     ],
     "plugin_metadata": {
         "org.apache.cordova.plugin.ActivityIndicator": "1.0.0",
-        "com.zendrive.phonegap.sdk": "2.0.2"
+        "com.zendrive.phonegap.sdk": "2.3.0",
+        "cordova-plugin-multidex": "1.0.0"
     }
 }

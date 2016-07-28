@@ -41,7 +41,16 @@
     "com.zendrive.phonegap.sdk": {
         "source": {
             "type": "git",
-            "url": "https://github.com/zendrive/zendrive-sdk-phonegap-plugin",
+            "url": "https://github.com/zendrive/zendrive-sdk-phonegap-plugin.git",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-multidex": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/solent/cordova-plugin-multidex",
             "subdir": "."
         },
         "is_top_level": true,

@@ -55,6 +55,14 @@
                         {
                             "xml": "<service android:name=\"com.zendrive.sdk.services.ZendriveService\" />",
                             "count": 1
+                        },
+                        {
+                            "xml": "<receiver android:label=\"WakeupReceiver\" android:name=\"com.zendrive.sdk.receiver.WakeupReceiver\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<service android:name=\"com.zendrive.phonegap.ZendriveIntentService\" />",
+                            "count": 1
                         }
                     ]
                 }
@@ -66,6 +74,9 @@
             "PACKAGE_NAME": "com.zendrive.phonegap.demo"
         },
         "com.zendrive.phonegap.sdk": {
+            "PACKAGE_NAME": "com.zendrive.phonegap.demo"
+        },
+        "cordova-plugin-multidex": {
             "PACKAGE_NAME": "com.zendrive.phonegap.demo"
         }
     },
@@ -90,6 +101,7 @@
     ],
     "plugin_metadata": {
         "org.apache.cordova.plugin.ActivityIndicator": "1.0.0",
-        "com.zendrive.phonegap.sdk": "2.0.2"
+        "com.zendrive.phonegap.sdk": "2.3.0",
+        "cordova-plugin-multidex": "1.0.0"
     }
 }

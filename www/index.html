@@ -12,12 +12,20 @@
 
         <script>
             // Please get a key from http://developers.Zendrive.com if you don't have one
-            var applicationKey = "your-application-key";
+            var applicationKey = "application-key";
             // Unique id of the driver using the app.
             var driverId = "driver-id";
 
             function processStartOfDrive(zendriveDriveStartInfo) {
                 alert("processStartOfDrive: " + JSON.stringify(zendriveDriveStartInfo));
+            }
+
+            function processActiveDrive(zendriveActiveDriveInfo) {
+                var stringifiedActiveDriveInfo = "null";
+                if (zendriveActiveDriveInfo != null) {
+                    stringifiedActiveDriveInfo = JSON.stringify(zendriveActiveDriveInfo);
+                }
+                alert("processActiveDrive: " + stringifiedActiveDriveInfo);
             }
 
             function processEndOfDrive(zendriveDriveInfo) {
@@ -70,6 +78,10 @@
                 Zendrive.startDrive(trackingId);
             }
 
+            function callGetActiveDrive(){
+                Zendrive.getActiveDriveInfo(processActiveDrive);
+            }
+
             function callStopDrive(){
                 Zendrive.stopDrive(trackingId);
                 trackingId = null;
@@ -99,7 +111,7 @@
 
     </head>
     <body>
-        <div style="margin-top:10%;">
+        <div style="margin-top:10%;" onload="onLoad()">
             <h1><a onclick="callSetup()">ZENDRIVE SETUP</a></h1>
             <br/>
             <br/>
@@ -107,6 +119,9 @@
             <br/>
             <br/>
             <h1><a onclick="callStartDrive()">ZENDRIVE START DRIVE</a></h1>
+            <br/>
+            <br/>
+            <h1><a onclick="callGetActiveDrive()">ZENDRIVE GET ACTIVE DRIVE</a></h1>
             <br/>
             <br/>
             <h1><a onclick="callStopDrive()">ZENDRIVE STOP DRIVE</a></h1>
@@ -122,11 +137,21 @@
             <br/>
             <br/>
             <h1><a onclick="setDriveDetectionOff()">ZENDRIVE AUTO OFF</a></h1>
+
         </div>
 
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
+            // Wait for device API libraries to load
+            function onLoad() {
+                document.addEventListener("deviceready", onDeviceReady, false);
+            }
+            // device APIs are available
+            function onDeviceReady() {
+                // after app loading completes call setup.
+                callSetup();
+            }
             app.initialize();
         </script>
     </body>
