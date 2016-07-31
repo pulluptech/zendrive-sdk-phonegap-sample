@@ -15,21 +15,21 @@
 		3047A5121AB8059700498E2A /* build-debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3047A50F1AB8059700498E2A /* build-debug.xcconfig */; };
 		3047A5131AB8059700498E2A /* build-release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3047A5101AB8059700498E2A /* build-release.xcconfig */; };
 		3047A5141AB8059700498E2A /* build.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3047A5111AB8059700498E2A /* build.xcconfig */; };
-		4E0EA8B81A0D411EA7773DB3 /* ActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BAD4BACDD69415684DA5E82 /* ActivityIndicator.m */; };
-		08CE2D2A6EEC4EAC8DB043D3 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF551BC4E7A4E0A95D6E16B /* MBProgressHUD.m */; };
-		30B3C42E7B57413680761C2F /* ZendriveCordovaPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = BF710612A2D647B18B02DBD5 /* ZendriveCordovaPlugin.m */; };
-		BC2FB8C31AEC4543B3ADF987 /* s3-2006-03-01.json in Resources */ = {isa = PBXBuildFile; fileRef = CFB4A0452C4D4EA8B0399C45 /* s3-2006-03-01.json */; };
-		F7D03B2D7B954FBABEF97EEA /* sqs-2012-11-05.json in Resources */ = {isa = PBXBuildFile; fileRef = 926BAA7F989A4CA6AE2C3973 /* sqs-2012-11-05.json */; };
-		9C45C02360AD41F98EE64A18 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1FF2C7D78ED476BAB425EF3 /* CoreLocation.framework */; };
-		F61DD4754E004D7685E24C46 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB82FD67F3CD49BEBA32639E /* CoreMotion.framework */; };
-		4171833B409D410EB9678E69 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FDA3667D2BA43B79CA58C9B /* SystemConfiguration.framework */; };
-		B2A010CB63A6486592FCB110 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B22498FC53F4D21A02DCA82 /* libsqlite3.0.dylib */; };
-		8F87D8D51F1F4655A0C39F72 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D6413D15FC2C4114BA32AB23 /* libz.1.1.3.dylib */; };
-		3D389FDBD21446548119339A /* AWSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B67F7C3727749A6BC2843E6 /* AWSCore.framework */; };
-		72642675286C4777B077AF80 /* AWSSQS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB533CAEB10E40588389FA03 /* AWSSQS.framework */; };
-		293F474F3FF240259D703811 /* FMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A05A7005CAC4E279846CD8E /* FMDB.framework */; };
-		5A3CE3340F934EAA8D26BCC0 /* Reachability.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F633D613A2D41D29CFF658C /* Reachability.framework */; };
-		F734D43710554AF583DDB325 /* ZendriveSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0264EA21B15B4AD4A64D490F /* ZendriveSDK.framework */; };
+		6267F489CC774BB2A514E171 /* ActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = C05446CC36A4429390BA8250 /* ActivityIndicator.m */; };
+		1D2EC98DCE2241F9B0CB3931 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F163B0E0A83649E19A6CF244 /* MBProgressHUD.m */; };
+		E857431171E7455F982D30C6 /* ZendriveCordovaPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A273E85AD5649EBBF1690CB /* ZendriveCordovaPlugin.m */; };
+		AB0536DDBFD549A4A339E3B8 /* s3-2006-03-01.json in Resources */ = {isa = PBXBuildFile; fileRef = B68191B6690E43A0B8CCD3ED /* s3-2006-03-01.json */; };
+		4E2D3B5FC67B4539A47E7DC2 /* sqs-2012-11-05.json in Resources */ = {isa = PBXBuildFile; fileRef = 914C0550EEDB4071BBEA3581 /* sqs-2012-11-05.json */; };
+		95CD39796CEB43B5941F74FC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D47B3C37B5DE409EB26B72C7 /* CoreLocation.framework */; };
+		7AF0161C839B4146AC26D87B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2789B3A440574A34BA6DCE11 /* CoreMotion.framework */; };
+		C49CD57162A34E66B9DF4E66 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCFE6E44FEB74414AF1DCB84 /* SystemConfiguration.framework */; };
+		CD54D0D4AA0042C48B08DE6B /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE0A4E7B22E427F830C4EED /* libsqlite3.0.dylib */; };
+		C270EE12D5FB49C39A9CD514 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 394C59A8CF104530AF9FB428 /* libz.1.1.3.dylib */; };
+		ABA8E6478F7A4A168E3F4EAC /* AWSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6544B5DC45494AA699C40EA5 /* AWSCore.framework */; };
+		7102573010034405BB7A82C4 /* AWSSQS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E2A7AE10EE54363BEEFEB66 /* AWSSQS.framework */; };
+		A85998A88106474AAB4742A7 /* FMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3E755E789C0451A93263F63 /* FMDB.framework */; };
+		A72ECD9BC14548C59F67C8FB /* Reachability.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F4E4CA1974E4E0CB15C4DA8 /* Reachability.framework */; };
+		506D6CEC820140E191D25237 /* ZendriveSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 004E47D85682439BA032FA9C /* ZendriveSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,24 +69,24 @@
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "ZendriveSDKPhonegapDemo/config.xml"; sourceTree = "<group>"; };
 		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "Bridging-Header.h"; sourceTree = "<group>"; };
-		9BAD4BACDD69415684DA5E82 /* ActivityIndicator.m */ = {isa = PBXFileReference; name = "ActivityIndicator.m"; path = "org.apache.cordova.plugin.ActivityIndicator/ActivityIndicator.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		2EF551BC4E7A4E0A95D6E16B /* MBProgressHUD.m */ = {isa = PBXFileReference; name = "MBProgressHUD.m"; path = "org.apache.cordova.plugin.ActivityIndicator/MBProgressHUD.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		17382EDCFE8C4088805309C4 /* ActivityIndicator.h */ = {isa = PBXFileReference; name = "ActivityIndicator.h"; path = "org.apache.cordova.plugin.ActivityIndicator/ActivityIndicator.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		E219B647B9B84E4CAE9E0434 /* MBProgressHUD.h */ = {isa = PBXFileReference; name = "MBProgressHUD.h"; path = "org.apache.cordova.plugin.ActivityIndicator/MBProgressHUD.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		BF710612A2D647B18B02DBD5 /* ZendriveCordovaPlugin.m */ = {isa = PBXFileReference; name = "ZendriveCordovaPlugin.m"; path = "com.zendrive.phonegap.sdk/ZendriveCordovaPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		E32524023C43445C80E30B87 /* ZendriveCordovaPlugin.h */ = {isa = PBXFileReference; name = "ZendriveCordovaPlugin.h"; path = "com.zendrive.phonegap.sdk/ZendriveCordovaPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		CFB4A0452C4D4EA8B0399C45 /* s3-2006-03-01.json */ = {isa = PBXFileReference; name = "s3-2006-03-01.json"; path = "s3-2006-03-01.json"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		926BAA7F989A4CA6AE2C3973 /* sqs-2012-11-05.json */ = {isa = PBXFileReference; name = "sqs-2012-11-05.json"; path = "sqs-2012-11-05.json"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		F1FF2C7D78ED476BAB425EF3 /* CoreLocation.framework */ = {isa = PBXFileReference; name = "CoreLocation.framework"; path = "System/Library/Frameworks/CoreLocation.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
-		BB82FD67F3CD49BEBA32639E /* CoreMotion.framework */ = {isa = PBXFileReference; name = "CoreMotion.framework"; path = "System/Library/Frameworks/CoreMotion.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
-		8FDA3667D2BA43B79CA58C9B /* SystemConfiguration.framework */ = {isa = PBXFileReference; name = "SystemConfiguration.framework"; path = "System/Library/Frameworks/SystemConfiguration.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
-		6B22498FC53F4D21A02DCA82 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; name = "libsqlite3.0.dylib"; path = "usr/lib/libsqlite3.0.dylib"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = compiled.mach-o.dylib; explicitFileType = undefined; includeInIndex = 0; };
-		D6413D15FC2C4114BA32AB23 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; name = "libz.1.1.3.dylib"; path = "usr/lib/libz.1.1.3.dylib"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = compiled.mach-o.dylib; explicitFileType = undefined; includeInIndex = 0; };
-		9B67F7C3727749A6BC2843E6 /* AWSCore.framework */ = {isa = PBXFileReference; name = "AWSCore.framework"; path = "ZendriveSDKPhonegapDemo/Plugins/com.zendrive.phonegap.sdk/AWSCore.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
-		DB533CAEB10E40588389FA03 /* AWSSQS.framework */ = {isa = PBXFileReference; name = "AWSSQS.framework"; path = "ZendriveSDKPhonegapDemo/Plugins/com.zendrive.phonegap.sdk/AWSSQS.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
-		8A05A7005CAC4E279846CD8E /* FMDB.framework */ = {isa = PBXFileReference; name = "FMDB.framework"; path = "ZendriveSDKPhonegapDemo/Plugins/com.zendrive.phonegap.sdk/FMDB.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
-		2F633D613A2D41D29CFF658C /* Reachability.framework */ = {isa = PBXFileReference; name = "Reachability.framework"; path = "ZendriveSDKPhonegapDemo/Plugins/com.zendrive.phonegap.sdk/Reachability.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
-		0264EA21B15B4AD4A64D490F /* ZendriveSDK.framework */ = {isa = PBXFileReference; name = "ZendriveSDK.framework"; path = "ZendriveSDKPhonegapDemo/Plugins/com.zendrive.phonegap.sdk/ZendriveSDK.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		C05446CC36A4429390BA8250 /* ActivityIndicator.m */ = {isa = PBXFileReference; name = "ActivityIndicator.m"; path = "org.apache.cordova.plugin.ActivityIndicator/ActivityIndicator.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		F163B0E0A83649E19A6CF244 /* MBProgressHUD.m */ = {isa = PBXFileReference; name = "MBProgressHUD.m"; path = "org.apache.cordova.plugin.ActivityIndicator/MBProgressHUD.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		A54989BE4CE143748F44F397 /* ActivityIndicator.h */ = {isa = PBXFileReference; name = "ActivityIndicator.h"; path = "org.apache.cordova.plugin.ActivityIndicator/ActivityIndicator.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		B11014BFCB61491F97291478 /* MBProgressHUD.h */ = {isa = PBXFileReference; name = "MBProgressHUD.h"; path = "org.apache.cordova.plugin.ActivityIndicator/MBProgressHUD.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		1A273E85AD5649EBBF1690CB /* ZendriveCordovaPlugin.m */ = {isa = PBXFileReference; name = "ZendriveCordovaPlugin.m"; path = "com.zendrive.phonegap.sdk/ZendriveCordovaPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		392B57A566F643B0A6D2944F /* ZendriveCordovaPlugin.h */ = {isa = PBXFileReference; name = "ZendriveCordovaPlugin.h"; path = "com.zendrive.phonegap.sdk/ZendriveCordovaPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		B68191B6690E43A0B8CCD3ED /* s3-2006-03-01.json */ = {isa = PBXFileReference; name = "s3-2006-03-01.json"; path = "s3-2006-03-01.json"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		914C0550EEDB4071BBEA3581 /* sqs-2012-11-05.json */ = {isa = PBXFileReference; name = "sqs-2012-11-05.json"; path = "sqs-2012-11-05.json"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D47B3C37B5DE409EB26B72C7 /* CoreLocation.framework */ = {isa = PBXFileReference; name = "CoreLocation.framework"; path = "System/Library/Frameworks/CoreLocation.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		2789B3A440574A34BA6DCE11 /* CoreMotion.framework */ = {isa = PBXFileReference; name = "CoreMotion.framework"; path = "System/Library/Frameworks/CoreMotion.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		BCFE6E44FEB74414AF1DCB84 /* SystemConfiguration.framework */ = {isa = PBXFileReference; name = "SystemConfiguration.framework"; path = "System/Library/Frameworks/SystemConfiguration.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		4FE0A4E7B22E427F830C4EED /* libsqlite3.0.dylib */ = {isa = PBXFileReference; name = "libsqlite3.0.dylib"; path = "usr/lib/libsqlite3.0.dylib"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = compiled.mach-o.dylib; explicitFileType = undefined; includeInIndex = 0; };
+		394C59A8CF104530AF9FB428 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; name = "libz.1.1.3.dylib"; path = "usr/lib/libz.1.1.3.dylib"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = compiled.mach-o.dylib; explicitFileType = undefined; includeInIndex = 0; };
+		6544B5DC45494AA699C40EA5 /* AWSCore.framework */ = {isa = PBXFileReference; name = "AWSCore.framework"; path = "ZendriveSDKPhonegapDemo/Plugins/com.zendrive.phonegap.sdk/AWSCore.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		7E2A7AE10EE54363BEEFEB66 /* AWSSQS.framework */ = {isa = PBXFileReference; name = "AWSSQS.framework"; path = "ZendriveSDKPhonegapDemo/Plugins/com.zendrive.phonegap.sdk/AWSSQS.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		F3E755E789C0451A93263F63 /* FMDB.framework */ = {isa = PBXFileReference; name = "FMDB.framework"; path = "ZendriveSDKPhonegapDemo/Plugins/com.zendrive.phonegap.sdk/FMDB.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		8F4E4CA1974E4E0CB15C4DA8 /* Reachability.framework */ = {isa = PBXFileReference; name = "Reachability.framework"; path = "ZendriveSDKPhonegapDemo/Plugins/com.zendrive.phonegap.sdk/Reachability.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		004E47D85682439BA032FA9C /* ZendriveSDK.framework */ = {isa = PBXFileReference; name = "ZendriveSDK.framework"; path = "ZendriveSDKPhonegapDemo/Plugins/com.zendrive.phonegap.sdk/ZendriveSDK.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,16 +95,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
-				9C45C02360AD41F98EE64A18 /* CoreLocation.framework in Frameworks */,
-				F61DD4754E004D7685E24C46 /* CoreMotion.framework in Frameworks */,
-				4171833B409D410EB9678E69 /* SystemConfiguration.framework in Frameworks */,
-				B2A010CB63A6486592FCB110 /* libsqlite3.0.dylib in Frameworks */,
-				8F87D8D51F1F4655A0C39F72 /* libz.1.1.3.dylib in Frameworks */,
-				3D389FDBD21446548119339A /* AWSCore.framework in Frameworks */,
-				72642675286C4777B077AF80 /* AWSSQS.framework in Frameworks */,
-				293F474F3FF240259D703811 /* FMDB.framework in Frameworks */,
-				5A3CE3340F934EAA8D26BCC0 /* Reachability.framework in Frameworks */,
-				F734D43710554AF583DDB325 /* ZendriveSDK.framework in Frameworks */,
+				95CD39796CEB43B5941F74FC /* CoreLocation.framework in Frameworks */,
+				7AF0161C839B4146AC26D87B /* CoreMotion.framework in Frameworks */,
+				C49CD57162A34E66B9DF4E66 /* SystemConfiguration.framework in Frameworks */,
+				CD54D0D4AA0042C48B08DE6B /* libsqlite3.0.dylib in Frameworks */,
+				C270EE12D5FB49C39A9CD514 /* libz.1.1.3.dylib in Frameworks */,
+				ABA8E6478F7A4A168E3F4EAC /* AWSCore.framework in Frameworks */,
+				7102573010034405BB7A82C4 /* AWSSQS.framework in Frameworks */,
+				A85998A88106474AAB4742A7 /* FMDB.framework in Frameworks */,
+				A72ECD9BC14548C59F67C8FB /* Reachability.framework in Frameworks */,
+				506D6CEC820140E191D25237 /* ZendriveSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,8 +166,8 @@
 				0207DA571B56EA530066E2B4 /* Images.xcassets */,
 				3047A50E1AB8057F00498E2A /* config */,
 				8D1107310486CEB800E47090 /* ZendriveSDKPhonegapDemo-Info.plist */,
-				CFB4A0452C4D4EA8B0399C45 /* s3-2006-03-01.json */,
-				926BAA7F989A4CA6AE2C3973 /* sqs-2012-11-05.json */,
+				B68191B6690E43A0B8CCD3ED /* s3-2006-03-01.json */,
+				914C0550EEDB4071BBEA3581 /* sqs-2012-11-05.json */,
 			);
 			name = Resources;
 			path = "ZendriveSDKPhonegapDemo/Resources";
@@ -176,16 +176,16 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F1FF2C7D78ED476BAB425EF3 /* CoreLocation.framework */,
-				BB82FD67F3CD49BEBA32639E /* CoreMotion.framework */,
-				8FDA3667D2BA43B79CA58C9B /* SystemConfiguration.framework */,
-				6B22498FC53F4D21A02DCA82 /* libsqlite3.0.dylib */,
-				D6413D15FC2C4114BA32AB23 /* libz.1.1.3.dylib */,
-				9B67F7C3727749A6BC2843E6 /* AWSCore.framework */,
-				DB533CAEB10E40588389FA03 /* AWSSQS.framework */,
-				8A05A7005CAC4E279846CD8E /* FMDB.framework */,
-				2F633D613A2D41D29CFF658C /* Reachability.framework */,
-				0264EA21B15B4AD4A64D490F /* ZendriveSDK.framework */,
+				D47B3C37B5DE409EB26B72C7 /* CoreLocation.framework */,
+				2789B3A440574A34BA6DCE11 /* CoreMotion.framework */,
+				BCFE6E44FEB74414AF1DCB84 /* SystemConfiguration.framework */,
+				4FE0A4E7B22E427F830C4EED /* libsqlite3.0.dylib */,
+				394C59A8CF104530AF9FB428 /* libz.1.1.3.dylib */,
+				6544B5DC45494AA699C40EA5 /* AWSCore.framework */,
+				7E2A7AE10EE54363BEEFEB66 /* AWSSQS.framework */,
+				F3E755E789C0451A93263F63 /* FMDB.framework */,
+				8F4E4CA1974E4E0CB15C4DA8 /* Reachability.framework */,
+				004E47D85682439BA032FA9C /* ZendriveSDK.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -211,12 +211,12 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				9BAD4BACDD69415684DA5E82 /* ActivityIndicator.m */,
-				2EF551BC4E7A4E0A95D6E16B /* MBProgressHUD.m */,
-				17382EDCFE8C4088805309C4 /* ActivityIndicator.h */,
-				E219B647B9B84E4CAE9E0434 /* MBProgressHUD.h */,
-				BF710612A2D647B18B02DBD5 /* ZendriveCordovaPlugin.m */,
-				E32524023C43445C80E30B87 /* ZendriveCordovaPlugin.h */,
+				C05446CC36A4429390BA8250 /* ActivityIndicator.m */,
+				F163B0E0A83649E19A6CF244 /* MBProgressHUD.m */,
+				A54989BE4CE143748F44F397 /* ActivityIndicator.h */,
+				B11014BFCB61491F97291478 /* MBProgressHUD.h */,
+				1A273E85AD5649EBBF1690CB /* ZendriveCordovaPlugin.m */,
+				392B57A566F643B0A6D2944F /* ZendriveCordovaPlugin.h */,
 			);
 			name = Plugins;
 			path = "ZendriveSDKPhonegapDemo/Plugins";
@@ -300,8 +300,8 @@
 				3047A5141AB8059700498E2A /* build.xcconfig in Resources */,
 				0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */,
 				3047A5121AB8059700498E2A /* build-debug.xcconfig in Resources */,
-				BC2FB8C31AEC4543B3ADF987 /* s3-2006-03-01.json in Resources */,
-				F7D03B2D7B954FBABEF97EEA /* sqs-2012-11-05.json in Resources */,
+				AB0536DDBFD549A4A339E3B8 /* s3-2006-03-01.json in Resources */,
+				4E2D3B5FC67B4539A47E7DC2 /* sqs-2012-11-05.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,9 +333,9 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
-				4E0EA8B81A0D411EA7773DB3 /* ActivityIndicator.m in Sources */,
-				08CE2D2A6EEC4EAC8DB043D3 /* MBProgressHUD.m in Sources */,
-				30B3C42E7B57413680761C2F /* ZendriveCordovaPlugin.m in Sources */,
+				6267F489CC774BB2A514E171 /* ActivityIndicator.m in Sources */,
+				1D2EC98DCE2241F9B0CB3931 /* MBProgressHUD.m in Sources */,
+				E857431171E7455F982D30C6 /* ZendriveCordovaPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
