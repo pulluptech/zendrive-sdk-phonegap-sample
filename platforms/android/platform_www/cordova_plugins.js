@@ -21,7 +21,7 @@ module.exports.metadata =
 // TOP OF METADATA
 {
     "org.apache.cordova.plugin.ActivityIndicator": "1.0.0",
-    "com.zendrive.phonegap.sdk": "2.3.2",
+    "com.zendrive.phonegap.sdk": "2.3.3",
     "cordova-plugin-multidex": "1.0.0"
 }
 // BOTTOM OF METADATA

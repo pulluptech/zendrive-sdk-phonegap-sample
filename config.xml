@@ -9,5 +9,5 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
-    <preference name="deployment-target" value="7.0" />
+    <preference name="deployment-target" value="8.0" />
 </widget>
